@@ -50,7 +50,7 @@
     
     .login-account-wall {
         padding: 10px 10px;
-        background-color: rgba(37, 196, 207, 0.8);
+        background-color: rgba(49, 167, 175, 0.8);
         box-shadow: 0 2px 2px rgb(26, 25, 25, 0.5);
         border-radius: 5px;
         -webkit-border-radius: 5px;
@@ -64,7 +64,6 @@
         color: rgb(210, 244, 245);
         font-size: 25px !important;
         font-weight: 800;
-        /* display: block; */
     }
     
     .login-profile-img {
@@ -75,11 +74,6 @@
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;
         border-radius: 50%;
-    }
-    
-    .login-need-help {
-        margin-top: 10px;
-        color: orange;
     }
     
     .login-new-account {
@@ -102,8 +96,7 @@
         flex-direction: column;
     }
     
-    #login-intro {
-        /* background-image: url(../Images/login/side.jpg); */
+  /*  #login-intro {
         padding: 30px 10px 10px;
         border-radius: 0px 5px 5px 0px;
         -webkit-border-radius: 0px 5px 5px 0px;
@@ -111,8 +104,8 @@
         -ms-border-radius: 0px 5px 5px 0px;
         -o-border-radius: 0px 5px 5px 0px;
         color: white;
-        background-image: url(../Images/login/side.jpg);
-    }
+        background-image: url(../Images/login/bg.jpg); 
+    } */
     
     @media(max-width:768px) {
         #login-intro {
@@ -128,9 +121,9 @@
         -moz-border-radius: 5px 0px 0px 5px;
         -ms-border-radius: 5px 0px 0px 5px;
         -o-border-radius: 5px 0px 0px 5px;
-        -webkit-border-radius: 5px 0px 0px 5px;
+        -webkit-border-radius: 5px 5px 5px 5px;
         color: black;
-        background-image: url(../Images/login/side.jpg);
+       /* background-image: url(../Images/login/side.jpg); */
     }
     
     #add-background {
