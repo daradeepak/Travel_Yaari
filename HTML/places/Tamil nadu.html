@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../CSS/nav2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../CSS/footer.css">
+    <title>Tamil Nadu</title>
+    <script>
+    </script>
+    <style>
+        /* * {
+            text-align: justify;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+        
+        .col-md-4 {
+            margin-top: 2rem;
+        }
+        
+        .my-panel {
+            /* height: 85vh; */
+            overflow: hidden;
+            border: 1px solid rgb(218, 217, 217);
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px 0px rgba(122, 185, 114, 0.75);
+            text-align: justify;
+            text-overflow: ellipsis;
+            padding: 1rem;
+        }
+        
+        .my-panel:hover {
+            box-shadow: 4px 3px 5px 0px rgba(86, 148, 83, 0.97);
+        }
+        /* .my-panel p {
+            margin: 0.7rem;
+        } */
+        
+        h4 {
+            color: #4caf50;
+            font-weight: bolder;
+        }
+        
+        .fa-star {
+            display: inline-flex;
+            align-items: center;
+            text-align: right;
+            justify-content: center;
+        }
+        
+        .checked {
+            color: orange;
+        }
+        
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(119, 216, 119, 0.9);
+            overflow: auto;
+            width: 100%;
+            height: 100%;
+            transform: scale(0);
+            transition: .3s ease;
+            border-radius: 10px;
+        }
+        
+        .im:hover .overlay {
+            transform: scale(1);
+        }
+        
+        .text {
+            color: rgb(249, 252, 248);
+            font-size: 15px;
+            position: absolute;
+            top: 11%;
+            left: 10%;
+            transform: translate(-10%, -10%);
+            text-align: justify;
+            margin: 1rem 0 1rem 1rem;
+        }
+        
+        .im {
+            float: right;
+        }
+        
+        .book {
+            color: white;
+        }
+        
+        .book:hover {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .type-destination {
+            text-align: center;
+            padding: 2rem;
+            font-weight: bolder;
+            color: rebeccapurple;
+            font-size: 32px;
+            text-shadow: rgb(83, 218, 228) 2px 2px 1px 2px;
+        }
+        
+        #intro {
+            text-align: justify;
+        }
+        
+        #choose-place {
+            font-size: 24px;
+            color: rgb(74, 236, 109);
+            text-align: center;
+            font-weight: bolder;
+        }
+        /* #fixing-width {
+            margin: auto rem;
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="navigation"></div>
+    <script>
+        jQuery(document).ready(function($) {
+
+            $('#navigation').load("../nav2.html");
+
+        });
+    </script>
+    <div class="container" id="fixing-width">
+        <h2 class="type-destination">Tamil Nadu</h2>
+        <div class="row" id="intro">
+            <div class="col-xs-12">
+            </div>
+        </div>
+        <h6 id="choose-place">Select your Dream Tourist Place</h6>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=-KdGaCmO2-8" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src="../places/images/KODAIKANAL.jpg" style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Kodaikanal</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Hill station in Tamil Nadu</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description1">
+Located in the state of Tamil Nadu, Kodaikanal is one of the most famous honeymoon destinations in India. A Lakeside resort town of Tamil Nadu, Kodaikanal has a beautiful climate, mist-covered manicured cliffs and waterfall that come together to create the ideal setting for a perfect getaway. Kodaikanal means 'the gift of the forests'
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+Located in the state of Tamil Nadu, Kodaikanal is one of the most famous honeymoon destinations in India. A Lakeside resort town of Tamil Nadu, Kodaikanal has a beautiful climate, mist-covered manicured cliffs and waterfall that come together to create the ideal setting for a perfect getaway. Kodaikanal means 'the gift of the forests'.
+Nestled amidst the rolling slopes of the Palani Hills, Kodaikanal stands at an altitude of 7200 feet above sea level, and once you visit this hill station, you will find that every bit of what you have imagined it to be is real. Kodaikanal is a place you can go to take a break from the rigours of daily city life, and this hill station lets you sit back and connect with nature as you head out on biking or trekking trails or take a stroll through the vast forests surrounding the town.
+
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=Y3oEc0CAxDA" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../places/images/OOTY.png " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Ooty</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Hill Station in Tamil Nadu</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description2">
+Nestled amidst Nilgiri hills, Ooty, also known as Udagamandalam, is a hill station in Tamil Nadu which serves as a top-rated tourist destination. Once regarded as the summer headquarters of the East India Company, the Queen of the hills is a picturesque getaway
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+Nestled amidst Nilgiri hills, Ooty, also known as Udagamandalam, is a hill station in Tamil Nadu which serves as a top-rated tourist destination. Once regarded as the summer headquarters of the East India Company, the Queen of the hills is a picturesque getaway.
+Dotted with tea gardens, serene waterfalls, winding country lanes, and charming colonial architecture, Ooty is the perfect respite everyone. Popular among couples and honeymooners, Ooty allures its visitors with the panoramic views of the Nilgiri mountains.
+The Nilgiri mountain railway is the steepest track in all of Asia. Remember the hit song 'Chaiyya Chaiyya' where Shahrukh Khan and Malaika Arora matching steps on top of a train? Remember the breathtaking locales as the train chugged its way across lush greenery? Yes, that was the Nilgiri Mountain Railways, and the Nilgiri Mountains all along.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=hV6Ly0-9cII" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src="../places/images/RAMESWARAM.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Rameswaram</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Holiest Place of India</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description3">
+Rameshwaram is one of the holiest places in India and is located on a beautiful island. It is separated by a small Pamban channel from Sri Lanka. According to the Hindu mythology, this is the place where Lord Rama created a bridge across the sea to Sri Lanka.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+Rameshwaram is one of the holiest places in India and is located on a beautiful island. It is separated by a small Pamban channel from Sri Lanka. According to the Hindu mythology, this is the place where Lord Rama created a bridge across the sea to Sri Lanka.
+Rameshwaram is located on a beautiful island in the lower side of India. Lord Shiva too is worshipped in this place. Renowned for its magnificent prakaras with massive sculptured pillars on either side, The Ramanathaswamy Temple houses the longest corridor in the world. Agniteertham is famous for its sacred waters and Pilgrims perform poojas in honour of their ancestors at this seashore. The Five-faced Hanuman Temple holds the floating stone which was used to build the bridge between India and Sri Lanka.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=PIU7nPfs1xE" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../places/images/MAHABALIPURAM.jpg" style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Mahabalipuram</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Carved temples</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description4">
+                        Famous for its intricately carved temples and rock-cut caves, Mamallapuram or Mahabalipuram as it is famously known, is a historically important and well-loved tourist location situated on the Coromandel Coast along the Bay of Bengal, in the state of Tamil Nadu. Once the abode of the famous dem...
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                Famous for its intricately carved temples and rock-cut caves, Mamallapuram or Mahabalipuram as it is famously known, is a historically important and well-loved tourist location situated on the Coromandel Coast along the Bay of Bengal, in the state of Tamil Nadu. Once the abode of the famous demon king Mahabali, Mahabalipuram was later renamed Mamallapuram. 
+
+                                The serenity, the alluring atmosphere and the impressive setting with many beautiful white sandy beaches dotted with casuarina trees are all reasons as to why one would want to visit this wonderful town. Some famous tourist spots include the UNESCO world heritage site Group of Monuments like the Shore Temple and the Five Rathas, the Crocodile Bank which is home to some exquisite species of crocodiles and alligators, and the beach resorts in Kovalam and Sadras.
+                               
+
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail"><br>
+                        <a href="https://www.youtube.com/watch?v=bI5sFB5_jF8" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../places/images/KANYAKUMARI.jpg  " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Kanyakumari</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Sea coast</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description5">
+                        Bordered by the three seas - Arabian, Indian and the Bay of Bengal, Kanyakumari is the southernmost tip of Indian Peninsula. A small coastal town in the state of Tamil Nadu, Kanyakumari was earlier known as Cape Comorin. The town is a mountainous terrain amid three seas, with ele..    
+                        <br>
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+Bordered by the three seas - Arabian, Indian and the Bay of Bengal, Kanyakumari is the southernmost tip of Indian Peninsula. A small coastal town in the state of Tamil Nadu, Kanyakumari was earlier known as Cape Comorin. The town is a mountainous terrain amid three seas, with elevated patches of hills, coconut trees and lined with paddy fields. Kanyakumari is also the only place in India where you can observe the sunrise and sunset at the same beach. 
+The town is not only popular for its unique phenomenon but also its beaches, temples, iconic monuments that attract a huge number of tourists throughout the year. The Kanyakumari Temple, Vivekananda Rock Memorial, Statue of the Poet Thiruvalluvar, the Padmanabhapuram Palace, the Vattakottai Fort, and the Gandhi Memorial are few of the most important sites in Kanyakumari. 
+Waterfalls in Kanyakumari that you should not miss out on include the Thirparappu falls, the Courtallam Falls, and the Olakaruvi falls. Kanyakumari has an authentic South Indian cuisine, with seafood and coconuts being an integral part of almost all dishes. While Kanyakumari is not a traditional shopping destination, you can buy plenty of souvenirs and curios from the numerous stalls and boutiques dotting the beachfront, with decorative seashell trinkets being a must-buy.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=jOFFYbcTeCU" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../places/images/KANCHIPURAM.jpg  " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Kanchipuram</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Golden city of thousand Temples and Famous for sarees</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description6">
+                        Widely known for its beautiful 'Kanchipuram sarees' and also referred to as the 'golden city of a thousand temples', Kanchipuram in Tamil Nadu is a popular tourist attraction. Kanchipuram or Kanchi attracts a lot of tourists from all over the world who are interested in Hinduism or just want to enjo...
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+ Widely known for its beautiful 'Kanchipuram sarees' and also referred to as the 'golden city of a thousand temples', Kanchipuram in Tamil Nadu is a popular tourist attraction. Kanchipuram or Kanchi attracts a lot of tourists from all over the world who are interested in Hinduism or just want to enjoy the marvel of South Indian architecture and grandeur. 
+It is particularly known for being a culture and philosophical hub. With such an association being made with the city, it is only natural that this destination has become such an influential centre in these avant-garde times. The city is home to the famous Kanchi Kamakshi Temple, which is the highly revered abode of Kamakshi (Goddess Parvathi) - consort of Lord Shiva. The Kailasanathar Temple is also popular and is known for its magnificent architecture. The highest, largest and most impressive temple in the town, spanning 40 acres and dating back to the Pallava period is the Ekambeshwarar Temple. The Kanchi Mutt holds kutcheris or South Indian classical music concerts in the evenings.
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+
+                        <a href="https://www.youtube.com/watch?v=vn7zeikph_w" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../places/images/COONOOR.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Coonoor</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Hill station</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description7">
+One of the three beautiful Nilgiri hill stations, Coonoor is the second largest hill station of the Western Ghats. It is situated at an altitude of 1930 meters and just 19 km from Ooty. With slopes of tea plantations, dotted with many attractions and blessed with chilly weather throughout ... </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+One of the three beautiful Nilgiri hill stations, Coonoor is the second largest hill station of the Western Ghats. It is situated at an altitude of 1930 meters and just 19 km from Ooty. With slopes of tea plantations, dotted with many attractions and blessed with chilly weather throughout the year, this place is a perfect summer retreat. 
+Coonoor is a delightful location to have a panoramic view of the Nilgiri Hills and Catherine Falls. It is a dreamy destination for its rich greenery, the manicured hills, the Colonial culture and amazing sceneries. Coonoor also has some heritage homes and guesthouses admits the hills that's perfect for a vacation or a staycation.   
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=oPesrpvMWI4" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../places/images/PONDICHERRY.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Pondicherry</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Sea point</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description8">
+Pondicherry, officially known as Puducherry, and commonly referred to as just Pondy, is one of the seven Union Territories of India which is bounded by the southern state of Tamil Nadu. This former French colony is a perfect amalgamation of the traditional Indian sensibilities and French architecture, making it a dreamy escape that offers the best of both worlds.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+Pondicherry, officially known as Puducherry, and commonly referred to as just Pondy, is one of the seven Union Territories of India which is bounded by the southern state of Tamil Nadu. This former French colony is a perfect amalgamation of the traditional Indian sensibilities and French architecture, making it a dreamy escape that offers the best of both worlds.
+The streets of the French Quarter of Pondicherry, also known as White Town, are dotted with charming mustard-yellow colonial structures with bougainvillaea laden walls. These are interspersed with cosy cafes and chic boutiques that offer delectable French cuisine and beverages. Simply strolling down these streets, can give the traveller an insight into the fairytale charm of Pondicherry.
+Topped with authentic French bakeries, bohemian stores and cobble-stoned paths that are delightful for a leisurely stroll or a bicycle ride, Pondicherry has a lot to offer. So head on down to this dream town of the Indian Coast and chug a few beers (at the Union Territory prices; bid adieu to state taxes) or just read a book in one of the quaint cafes.
+Come explore the boulevards and rues (the French word for streets) of Pondicherry that will ultimately take you down to the gorgeous seaside promenade, and witness the Bay of Bengal playfully splashing the shores of the famous Rock beach.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=jCA0SDCJLek" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../places/images/THANJEVUR.png " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Thanjavur</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">City of temples</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description9">
+Also known as Tanjore or the city of temples, Thanjavur has a lot of cultural value and is known for its famous Tanjore paintings, antiques and handicrafts, textiles and saris , its Carnatic music and musical instruments and of course the temples.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+Also known as Tanjore or the city of temples, Thanjavur has a lot of cultural value and is known for its famous Tanjore paintings, antiques and handicrafts, textiles and saris , its Carnatic music and musical instruments and of course the temples.
+Thanjavur enjoys a rich historical heritage and holds a very important position in the moulding of ancient as well modern south Indian civilization. Being of religious importance, this place is a must for all pilgrims. There are many religious places in and around the district. Siva Ganga Garden, Art Gallery, Palace & Saraswathi Mahal Library, Sangeetha Mahal are the main tourist attractions. This is a place where you can constantly witness the magnificent and dynamic cultures of the past and present breathing life into and living in the everyday, giving the area a unique and glorious identity.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=cBhd9NabBfw" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../places/images/DHANUSHKODI.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Dhanushkodi</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Beach Town</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description10">
+                        Dhanushkodi is a small, sparsely populated beach town on the coast of Tamil Nadu. In the 1964, Dhanushkodi was hit by one of the worst storms India has ever seen. Ever since then, Tamil Nadu has rebuilt this town to become one of the most unique and unusual beach towns of India.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+Dhanushkodi is a small, sparsely populated beach town on the coast of Tamil Nadu. In the 1964, Dhanushkodi was hit by one of the worst storms India has ever seen. Ever since then, Tamil Nadu has rebuilt this town to become one of the most unique and unusual beach towns of India.
+This small town redefines the term isolated. Cut off from the rest of the world, this town seems untouched by time. While the rest of India is vying to get ahead in the race for prosperity, this town seems frozen in history, reflecting it grandeur and beauty.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=tYMb4HwyzSc" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../places/images/MADURAI.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Madurai</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">FAmous Temples</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description11">
+Madurai, the cultural capital of Tamil Nadu, is one of the oldest continuously inhabited cities of India. Ruled by Pandya kings for the longest time in its history, it is called as the 'Lotus City' as it was planned and built in the shape of a lotus. Madurai is known for Meenakshi Amman Temple, dedicated to the goddess Meenakshi with a sanctum for her consort, Sundareshwarar. 
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+Madurai, the cultural capital of Tamil Nadu, is one of the oldest continuously inhabited cities of India. Ruled by Pandya kings for the longest time in its history, it is called as the 'Lotus City' as it was planned and built in the shape of a lotus. Madurai is known for Meenakshi Amman Temple, dedicated to the goddess Meenakshi with a sanctum for her consort, Sundareshwarar. 
+There are many other ancient temples in Madurai, including Thiruparankundram. It is one of the important old temples dedicated to Lord Muruga(Karthikeya) and is located on a hillock approximately 8 km from the city. Having trade ties with ancient Rome, the place holds a great cultural heritage. With bustling bazaars and fantastic street food, Madurai has heritage walks conducted throughout the day. Madurai is instrumental in promoting Tamil language and preserving the culture.  
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=9o0VuV-f-XI" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../places/images/COIMBATORE.png" style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Coimbatore</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Manchester of South India</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description12">
+Often termed as 'Manchester of South India', Coimbatore, the second-largest city in Tamil Nadu, photographically situated on the banks of River Noyyal. Coimbatore, also known as Kovai, is a welcoming area with the backdrop of hustle-bustle and charm of activity and industry. From ancient temple...
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+
+                         Often termed as 'Manchester of South India', Coimbatore, the second-largest city in Tamil Nadu, photographically situated on the banks of River Noyyal. Coimbatore, also known as Kovai, is a welcoming area with the backdrop of hustle-bustle and charm of activity and industry.
+                         From ancient temples to classy new buildings, from breathtaking mountains to jaw-dropping waterfalls, from mouth-watering cuisine to pleasant weather all year round, Coimbatore has everything you could possibly need to make for a perfect holiday experience. Coimbatore is home to a massive 112 feet tall statue of Lord Shiva, known as the Adiyogi Shiva Statue. Featured in the Guinness Book of World Records, this architectural masterpiece is a very popular tourist spot in Coimbatore and stands as a symbol of self-transformation and inner peace.Camping and trekking are very popular things to do in Coimbatore, so if you’re looking for a thrill, don’t forget to check out the most exciting trekking trails that the city has to offer, such as the Dhoni Hills, the Vellari Mala, the Perumal Peak, and the Thalaiyar Falls trek. The official name of Coimbatore has been changed to Koyampuththoor. It was done to change the name of the city closer its original name in Tamil.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div style="margin-bottom: 2rem;"></div>
+    <div id="foot"></div>
+    <script>
+        $(document).ready(function() {
+
+            $('#foot').load("../footer1.html");
+
+        });
+    </script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+        var myDiv1 = $('#description1');
+        myDiv1.text(myDiv1.text().substring(0, 500) + "......");
+        var myDiv2 = $('#description2');
+        myDiv2.text(myDiv2.text().substring(0, 500) + "......");
+        var myDiv3 = $('#description3');
+        myDiv3.text(myDiv3.text().substring(0, 500) + "......");
+        var myDiv4 = $('#description4');
+        myDiv4.text(myDiv4.text().substring(0, 500) + "......");
+        var myDiv5 = $('#description5');
+        myDiv5.text(myDiv5.text().substring(0, 500) + "......");
+        var myDiv6 = $('#description6');
+        myDiv6.text(myDiv6.text().substring(0, 500) + "......");
+        var myDiv7 = $('#description7');
+        myDiv7.text(myDiv7.text().substring(0, 500) + "......");
+        var myDiv8 = $('#description8');
+        myDiv8.text(myDiv8.text().substring(0, 530) + "......");
+        var myDiv9 = $('#description9');
+        myDiv9.text(myDiv9.text().substring(0, 500) + "......");
+        var myDiv10 = $('#description10');
+        myDiv10.text(myDiv10.text().substring(0, 500) + "......");
+        var myDiv11 = $('#description11');
+        myDiv11.text(myDiv11.text().substring(0, 500) + "......");
+        var myDiv12 = $('#description12');
+        myDiv12.text(myDiv12.text().substring(0, 500) + "......");
+
+        function logout() {
+            alert("you are about to logout. Click OK to continue. ");
+        }
+    </script>
+</body>
+
+</html>
