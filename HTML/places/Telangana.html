@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../CSS/nav2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../CSS/footer.css">
+    <title>Telangana</title>
+    <script>
+    </script>
+    <style>
+        /* * {
+            text-align: justify;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+        
+        .col-md-4 {
+            margin-top: 2rem;
+        }
+        
+        .my-panel {
+            /* height: 85vh; */
+            overflow: hidden;
+            border: 1px solid rgb(218, 217, 217);
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px 0px rgba(122, 185, 114, 0.75);
+            text-align: justify;
+            text-overflow: ellipsis;
+            padding: 1rem;
+        }
+        
+        .my-panel:hover {
+            box-shadow: 4px 3px 5px 0px rgba(86, 148, 83, 0.97);
+        }
+        /* .my-panel p {
+            margin: 0.7rem;
+        } */
+        
+        h4 {
+            color: #4caf50;
+            font-weight: bolder;
+        }
+        
+        .fa-star {
+            display: inline-flex;
+            align-items: center;
+            text-align: right;
+            justify-content: center;
+        }
+        
+        .checked {
+            color: orange;
+        }
+        
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(119, 216, 119, 0.9);
+            overflow: auto;
+            width: 100%;
+            height: 100%;
+            transform: scale(0);
+            transition: .3s ease;
+            border-radius: 10px;
+        }
+        
+        .im:hover .overlay {
+            transform: scale(1);
+        }
+        
+        .text {
+            color: rgb(249, 252, 248);
+            font-size: 15px;
+            position: absolute;
+            top: 11%;
+            left: 10%;
+            transform: translate(-10%, -10%);
+            text-align: justify;
+            margin: 1rem 0 1rem 1rem;
+        }
+        
+        .im {
+            float: right;
+        }
+        
+        .book {
+            color: white;
+        }
+        
+        .book:hover {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .type-destination {
+            text-align: center;
+            padding: 2rem;
+            font-weight: bolder;
+            color: rebeccapurple;
+            font-size: 32px;
+            text-shadow: rgb(83, 218, 228) 2px 2px 1px 2px;
+        }
+        
+        #intro {
+            text-align: justify;
+        }
+        
+        #choose-place {
+            font-size: 24px;
+            color: rgb(74, 236, 109);
+            text-align: center;
+            font-weight: bolder;
+        }
+        /* #fixing-width {
+            margin: auto rem;
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="navigation"></div>
+    <script>
+        jQuery(document).ready(function($) {
+
+            $('#navigation').load("../nav2.html");
+
+        });
+    </script>
+    <div class="container" id="fixing-width">
+        <h2 class="type-destination">Telangana</h2>
+        <div class="row" id="intro">
+            <div class="col-xs-12">
+            </div>
+        </div>
+        <h6 id="choose-place">Select your Dream Tourist Place</h6>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://youtu.be/_xVc-_Rug6g" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src="../places/images/birla mandhir.jpg" style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>birla mandhir</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Lord Venkateshwara hill</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description1">
+                        Birla Mandir is a Hindu temple, built on a 280 feet (85 m) high hillock called Naubath Pahad on a 13 acres (53,000 m2) plot. The construction took 10 years and was opened in 1976 by Swami Ranganathananda of Ramakrishna Mission. The temple was constructed by Birla Foundation, which has also constructed several similar temples across India, all of which are known as Birla Mandir.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                The temple manifests a blend of Dravidian, Rajasthani and Utkala architectures. It is constructed of 2000 tons of pure white marble. The granite idol of presiding deity Lord Venkateswara is about 11 ft (3.4 m) tall and a carved lotus forms an umbrella on the top. There is a brass flagstaff in the temple premises which rises to a height of 42 ft (13 m). The temple does not have traditional bells, as Swami Ranganathananda wished that the temple atmosphere should be conducive for meditation.
+
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://youtu.be/CEEjzf044UU" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../places/images/chilkur balaji.JFIF " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>chilkur balaji</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Venkateshwara Alayam</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description2">
+                        Chilkur Balaji Temple, popularly known as "Visa Balaji Temple'', is an ancient Hindu temple of Lord Balaji on the banks of Osman Sagar in Rangareddy District. It is one of the oldest temples in Hyderabad Dist earlier now in Rangareddy Dist. built during the time of Madanna and Akkanna, the uncles of Bhakta Ramadas
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                This temple has no hundi and neither accepts any money from devotees.[2] VAK Books also known as the Voice of Temples with religious news is available here. This is one of the special Temples in India with no green channel or privileges for VIP's.[3] The only other such temple is the Jalaram temple in Virpur (Rajkot), Gujarat. This temple fought and won the right to stay out of government control. The only another such temple is "Ramanuj Kot", a temple in Jodhpur, Rajasthan.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://youtu.be/Ws0pRN9htKo" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src="../places/images/qutub shahi tombs.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>qutub shahi tombs</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">The Great Tomb</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description3">
+                        The Qutub Shahi Tombs are located in the Ibrahim Bagh (garden precinct), close to the famous Golconda Fort in Hyderabad, India. They contain the tombs and mosques built by the various kings of the Qutub Shahi dynasty.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                The tombs form a large cluster and stand on a raised platform. The tombs are domed structures built on a square base surrounded by pointed arches, a distinctive style that blends Persian and Indian forms. The tombs are structures with intricately carved stonework and are surrounded by landscaped gardens.[5]
+
+                                The tombs were once furnished with carpets, chandeliers and velvet canopies on silver poles. Copies of the Quran were kept on pedestals and readers recited verses from the holy book at regular intervals. Golden spires were fitted over the tombs of the sultans to distinguish their tombs from those of other members of the royal family.  
+                               
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://youtu.be/mMUKJy6tnxw" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../places/images/ramoji film city.jpg" style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>ramoji film city</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Beaches and Shopping</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description4">
+                      Ramoji film city  is an integrated film studio complex located in Hyderabad, India. Spread over 1,666 acres,[1] it is the largest integrated film city in the world and as such has been certified by the Guinness World Records as the largest studio complex in the world.[2] It was built by Telugu film producer Ramoji Rao in 1996.[1][3] The Guardian described Ramoji Film City as "city within a city.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+
+                                The film city is the brainchild of film producer Ramoji Rao, who wanted to build a studio similar to the ones in Hollywood.[1] On procuring the land, he signed art director Nitish Roy to design the complex. According to an executive, the builders kept the land, which at that time consisted of jungles and mountainous terrain, intact, without removing one tree or mountain.
+
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail"><br>
+                        <a href="https://youtu.be/-eyeJASL3aU" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../places/images/chowmahalla palace.JFIF " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>chowmahalla palace</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">chowmahalla palace</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description5">
+                        The word chār or chahār, and its variation chow, means "four" and the word mahal means "palace" in Urdu, Hindi and Persian.[5] All ceremonial functions including the accession of the Nizams and receptions for the Governor-General were held at this palace.<br>
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                Chowmahalla Palace or Chowmahallat (from chār mahallāt, lit. "four palaces" in Dakhini Urdu) is the palace of the Nizams of Hyderabad State in Hyderabad, Telangana, India.[1] It was the seat of the Asaf Jahi dynasty and was the official residence of the Nizams of Hyderabad while they ruled their state. 
+                                <br><br>The palace was built by Nizam Salabat Jung.[2] The palace remains the property of Barkat Ali Khan Mukarram Jah, heir of the Nizams. Other members of the Hyderabadi Nizam family have also wed here.[3][4]   
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://youtu.be/PTQk44eFDnc" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../places/images/hussain-sagar-lake.JPG " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>hussain-sagar-lake</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;"> The Tank Bund</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description6">
+                        Hussain Sagar (alternatively referred to as Tank Bund,[1] (Telugu pronunciation: [ɦusen sɑːgər])) is a heart-shaped lake in Hyderabad, Telangana, built by Ibrahim Quli Qutb Shah in 1563. It is spread across an area of 5.7 square kilometres (2.2 sq mi) and is fed by the River Musi.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                A large monolithic statue of the Gautama Buddha, erected in 1992, stands on Gibraltar Rock in the middle of the lake. It also separates the city centre of Hyderabad from its neighborhood Secunderabad.[2] The maximum depth of the lake is 32 feet (9.8 m).
+                                <br><br> Hussain Sagar was built across a tributary of the Musi river in 1563 by Ibrahim Quli Qutb Shah. The lake was named after Hussain Shah Wali, who was the Master of Architecture in the Kingdom. It is an artificial lake that holds water perennially fed by canals from Musi river. Hussain Sagar was the main source of water supply to Hyderabad before Himayat Sagar and Osman Sagar were built on river Musi.
+
+                                The Buddha statue was chiseled out of a white granite rock, weighing 450 tons. It was carved by 200 sculptors for two years. The statue was transported to Hyderabad in November 1988. After initial problems, the statue was erected on 12 April 1992 on a red lotus pedestal.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+
+                        <a href="https://youtu.be/xjg7TbvuPEk?t=62" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../places/images/birla-planetarium.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>birla-planetarium</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">A blissful birla-planetarium</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description7">
+                        B. M. Birla Science Museum is an Indian science museum located in Hyderabad, India. Constructed by civil engineer P. A. Singaravelu, it comprises a planetarium, museum, science centre, art gallery as well as a dinosaurium.[1] The museum itself was the second phase of the science centre when it opened in 1990.[2] The centre also houses India's first private Space Museum. The museum is a unique facility which is dedicated to history of the space program of India. The space museum was inaugurated in July 2019 and was curated by Pranav Sharma </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                The Birla Planetarium is a wing of the Science Centre. The planetarium was inaugurated by N. T. Rama Rao, on 8 September 1985 and is one of three Birla Planetariums in India. The others are the M.P. Birla Planetarium in Kolkata and B.M. Birla Planetarium in Chennai.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://youtu.be/LttpKeWNx_E?t=14" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../places/images/salar jung mueseum.JFIF " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>salar jung mueseum</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">mystic mueseum</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description8">
+                        The Salar Jung Museum is an art museum located at Dar-ul-Shifa, on the southern bank of the Musi River in the city of Hyderabad, Telangana, India. It is one of the three National Museums of India.[1] Originally a private art collection of the Salar Jung family, it was endowed to the nation after the death of Salar Jung III. It was inaugurated on 16 December 1951.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                It has a collection of sculptures, paintings, carvings, textiles, manuscripts, ceramics, metallic artifacts, carpets, clocks, and furniture from Japan, China, Burma, Nepal, India, Persia, Egypt, Europe, and North America. It is one of the largest museums in the world.
+                                <br><br>After the Nawab died in 1949, the collections were left behind in his ancestral palace Diwan Devdi. The collection was formerly exhibited there as a private museum, named Salar Jung Museum, which was inaugurated by Jawaharlal Nehru on 16 December 1951.[3][4]
+
+                                Old timers believe that the present collection constitutes only half of the original art wealth collected by the Nawab. His employees siphoned off part of it, since the Nawab depended upon his staff to keep a vigil.
+                                
+                                In 1968, the museum shifted to its present location at Dar-ul-Shifa, and is administered by a Board of Trustees with the Governor of Telangana as ex officio chairperson under the Salar Jung Museum Act of 1961. Some more art pieces were lost or stolen during the shifting of the museum from Diwan Devdi to the present site.[5]
+                                
+                                In 2003, the museum signed a memorandum of understanding with the National Mission for Manuscripts, and was declared a manuscript conservation centre.
+                                
+                                In 2006, a fire broke out in an auditorium in the museum premises. However, it was quickly extinguished and none of the artifacts were damaged.[6][7] After the incident, fire safety facilities were upgraded.[8]
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://youtu.be/MFWeYoOmdjQ" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../places/images/LUMBINIPARK.JFIF " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>LUMBINIPARK,TELANGANA</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">LUMBINIPARK</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description9">
+                        Lumbini Park, officially T. Anjaiah Lumbini Park[1] is a small public, urban park of 3 hectares (7.5 acres) adjacent to Hussain Sagar in Hyderabad, India.
+                         Since it is located in the centre of the city and is in close proximity to other tourist attractions, such as Birla Mandir and Necklace Road, it attracts many visitors throughout the year. 
+                         Boating is one of the best part and people go to the Buddha idol placed in the middle of the tank band in the boats.
+                          Constructed in 1994, the park is maintained by the Buddha Purnima Project Authority that functions under the directives of the Government of Telangana. In 2007, it was one of the targets of the 25 August 2007 Hyderabad bombings that killed 44 people.
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+                                In 1994, Lumbini Park was constructed at a cost of ₹23.5 million (equivalent to ₹120 million or US$1.7 million in 2019) on 3 hectares (7.5 acres) of land adjacent to Hussain Sagar. 
+                                In 2000, the Buddha Purnima Project Authority (BPPA) was established to maintain specially designated development areas in Hyderabad.
+                                 Among tourist attractions such as Necklace Road and NTR Gardens, Lumbini Park is being maintained by BPPA.[3] 
+                                 To enhance the inflow of visitors, it constructed additional facilities for laser auditorium, boating facilities among other visually appealing features such as gardens and musical fountains.[3]
+                                  In 2006, the park was named as T. Anjaiah Lumbini Park in honour of the late Chief Minister of Andhra Pradesh
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+        </div>
+
+            
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div style="margin-bottom: 2rem;"></div>
+    <div id="foot"></div>
+    <script>
+        $(document).ready(function() {
+
+            $('#foot').load("../footer1.html");
+
+        });
+    </script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+        var myDiv1 = $('#description1');
+        myDiv1.text(myDiv1.text().substring(0, 500) + "......");
+        var myDiv2 = $('#description2');
+        myDiv2.text(myDiv2.text().substring(0, 500) + "......");
+        var myDiv3 = $('#description3');
+        myDiv3.text(myDiv3.text().substring(0, 500) + "......");
+        var myDiv4 = $('#description4');
+        myDiv4.text(myDiv4.text().substring(0, 500) + "......");
+        var myDiv5 = $('#description5');
+        myDiv5.text(myDiv5.text().substring(0, 500) + "......");
+        var myDiv6 = $('#description6');
+        myDiv6.text(myDiv6.text().substring(0, 500) + "......");
+        var myDiv7 = $('#description7');
+        myDiv7.text(myDiv7.text().substring(0, 500) + "......");
+        var myDiv8 = $('#description8');
+        myDiv8.text(myDiv8.text().substring(0, 530) + "......");
+        var myDiv9 = $('#description9');
+        myDiv9.text(myDiv9.text().substring(0, 500) + "......");
+        var myDiv10 = $('#description10');
+        myDiv10.text(myDiv10.text().substring(0, 500) + "......");
+        var myDiv11 = $('#description11');
+        myDiv11.text(myDiv11.text().substring(0, 500) + "......");
+        var myDiv12 = $('#description12');
+        myDiv12.text(myDiv12.text().substring(0, 500) + "......");
+
+        function logout() {
+            alert("you are about to logout. Click OK to continue. ");
+        }
+    </script>
+</body>
+
+</html>
