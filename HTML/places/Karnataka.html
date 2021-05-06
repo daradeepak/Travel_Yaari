@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../CSS/nav2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../CSS/footer.css">
+    <title>Karnataka</title>
+    <script>
+    </script>
+    <style>
+        /* * {
+            text-align: justify;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+        
+        .col-md-4 {
+            margin-top: 2rem;
+        }
+        
+        .my-panel {
+            /* height: 85vh; */
+            overflow: hidden;
+            border: 1px solid rgb(218, 217, 217);
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px 0px rgba(122, 185, 114, 0.75);
+            text-align: justify;
+            text-overflow: ellipsis;
+            padding: 1rem;
+        }
+        
+        .my-panel:hover {
+            box-shadow: 4px 3px 5px 0px rgba(86, 148, 83, 0.97);
+        }
+        /* .my-panel p {
+            margin: 0.7rem;
+        } */
+        
+        h4 {
+            color: #4caf50;
+            font-weight: bolder;
+        }
+        
+        .fa-star {
+            display: inline-flex;
+            align-items: center;
+            text-align: right;
+            justify-content: center;
+        }
+        
+        .checked {
+            color: orange;
+        }
+        
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(119, 216, 119, 0.9);
+            overflow: auto;
+            width: 100%;
+            height: 100%;
+            transform: scale(0);
+            transition: .3s ease;
+            border-radius: 10px;
+        }
+        
+        .im:hover .overlay {
+            transform: scale(1);
+        }
+        
+        .text {
+            color: rgb(249, 252, 248);
+            font-size: 15px;
+            position: absolute;
+            top: 11%;
+            left: 10%;
+            transform: translate(-10%, -10%);
+            text-align: justify;
+            margin: 1rem 0 1rem 1rem;
+        }
+        
+        .im {
+            float: right;
+        }
+        
+        .book {
+            color: white;
+        }
+        
+        .book:hover {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .type-destination {
+            text-align: center;
+            padding: 2rem;
+            font-weight: bolder;
+            color: rebeccapurple;
+            font-size: 32px;
+            text-shadow: rgb(83, 218, 228) 2px 2px 1px 2px;
+        }
+        
+        #intro {
+            text-align: justify;
+        }
+        
+        #choose-place {
+            font-size: 24px;
+            color: rgb(74, 236, 109);
+            text-align: center;
+            font-weight: bolder;
+        }
+        /* #fixing-width {
+            margin: auto rem;
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="navigation"></div>
+    <script>
+        jQuery(document).ready(function($) {
+
+            $('#navigation').load("../nav2.html");
+
+        });
+    </script>
+    <div class="container" id="fixing-width">
+        <h2 class="type-destination">Karnataka</h2>
+        <div class="row" id="intro">
+            <div class="col-xs-12">
+            </div>
+        </div>
+        <h6 id="choose-place">Select your Dream Tourist Place</h6>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=MoUyhklkD4Q" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src="../places/images/COORG.jpg" style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Coorg</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Hill station</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description1">
+Located amidst imposing mountains in Karnataka with a perpetually misty landscape, Coorg is a popular coffee producing hill station. It is popular for its beautiful green hills and the streams cutting right through them. It also stands as a popular destination because of its culture and people....
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+Located amidst imposing mountains in Karnataka with a perpetually misty landscape, Coorg is a popular coffee producing hill station. It is popular for its beautiful green hills and the streams cutting right through them. It also stands as a popular destination because of its culture and people. The Kodavas, a local clan specializing in martial arts, are especially notable for their keen hospitality.
+Coorg, officially known as Kodagu, is the most affluent hill station in Karnataka. It is well known for its breathtakingly exotic scenery and lush greenery. Forest covered hills, spice and coffee plantations only add to the landscape. Madikeri is the region's centre point with all transportation for getting around starting from here. On a visit to Coorg, cover the beautiful towns like Virajpet, Kushalnagar, Gonikoppal, Pollibetta, and Somwarpet, and experience the beautiful concept of "homestays" to make your experience more memorable! 
+
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=YBTDw6Hcu4I" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../places/images/BANGALORE.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Bangalore</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Capital of Karnataka</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description2">
+Having evolved gradually from being the Garden city to the Silicon Valley of India, Bangalore is India's third-largest city. Bangalore is loved for its pleasant weather, beautiful parks and the many lakes here. Bangalore is renowned for its eateries, street food corners, quirky cafes, coffee ro...
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+Having evolved gradually from being the Garden city to the Silicon Valley of India, Bangalore is India's third-largest city. Bangalore is loved for its pleasant weather, beautiful parks and the many lakes here. Bangalore is renowned for its eateries, street food corners, quirky cafes, coffee roasters and pubs dotting every corner of the city, serving cuisines from all over the world. Brunches, buffets, burgers, rooftop cafes, late-night eats - Bangalore has it all.
+Here, one can choose to take a long stroll through the beautiful Cubbon Park, shop in the many malls or street markets or hop into one of the many acclaimed breweries for a cold and refreshing drink. There are a huge number of beautifully decorated parks in the city that are ideal for going on a morning stroll or a jog. One walk through the 300-acre Cubbon Park, or the botanical gardens of Lalbagh, and you'll know precisely why Bangalore is so famously called India's 'Garden City'.
+But just like every big city, the unprecedented growth of IT in Bangalore has reshaped quite a few things including rising temperatures, polluted lakes and heavily congested roads, especially in the newer areas. Aside from the central business and commercial districts (and the roads leading up to them), the neighbourhoods of Bangalore are mostly quiet and serene, especially the older parts of the city like Jayanagar and J.P Nagar.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=GZuKMTZI5Oo" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src="../places/images/MYSORE.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Mysore</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">City of palaces</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description3">
+Famously known as The City of Palaces, it wouldn’t be wrong to say that Mysore, currently Mysuru, is one of the most important places in the country regarding ancient reigns. It is replete with the history of its dazzling royal heritage, intricate architecture, its famed silk sarees, yoga, and ...
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+Famously known as The City of Palaces, it wouldn’t be wrong to say that Mysore, currently Mysuru, is one of the most important places in the country regarding ancient reigns. It is replete with the history of its dazzling royal heritage, intricate architecture, its famed silk sarees, yoga, and sandalwood, to name just a few. Located in the foothills of the Chamundi Hills, Mysore is the third most populated city in Karnataka, and its rich heritage draws millions of tourists all year round. The highlight is the majestic Mysore Palace, a UNESCO World Heritage Site, which is a must-visit.
+Mysore was one of the three largest Princely States in the erstwhile British Empire of India. To this day, the Mysore Palace stands tall as one of the most spectacular palaces in India. A very famous tourist spot that sees thousands of visitors milling in and around it every day, the Mysore Palace is a mesmerizing example of Indo-Saracenic architecture, every inch of the palace drips with opulence and intricate details, and every room that you visit stands out in terms of its elaborate architecture, beautiful paintings, rich colours and stained-glass windows. On every Sunday, and during the Dussehra celebrations, the palace is spectacularly lit up once dusk falls.
+Another popular element in Mysore is the Ashtanga School of Yoga. This draws visitors and practitioners from around the world to participate in this style of yoga that originated in Mysore. 
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=RPcqdqOWMo4" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../places/images/CHIKMAGALUR.jpg" style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Chikmagalur</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">coffee land of karnataka</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description4">
+Popularly known as the ‘Coffee Land of Karnataka’, Chikmagalur is situated in the foothills of the Mullayangiri Range and is one of the most beautiful hill stations in Karnataka. Chikmagalur has a perpetual fragrance of coffee lingering in the air with it plenty of coffee plantations. Famous fo...
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+Popularly known as the ‘Coffee Land of Karnataka’, Chikmagalur is situated in the foothills of the Mullayangiri Range and is one of the most beautiful hill stations in Karnataka. Chikmagalur has a perpetual fragrance of coffee lingering in the air with it plenty of coffee plantations. Famous for its tall mountains, lush green forests and its tranquil environment (apart from its coffee production), Chikmagalur is a very popular tourist destination and is a quick retreat for the people of Karnataka.
+Being the largest producer of coffee in the country, Chikmagalur is mainly all about its coffee.  So if you’re a coffee enthusiast as well as a nature lover, taking a walk through one (or a few) of the numerous coffee plantations in the city is a must-do activity. Many of these coffee estates not only allow visitors to take guided tours through the plantations, but they also provide home-stays right within the estates, so you can literally wake up to and end your day with the smell of coffee in the air.
+Chikmagalur is a very popular trekking spot and boasts of many incredible trekking trails, such as the Mullayangiri trek, the Kemmanagundi trek, and the Baba Budangiri trek. Mullayangiri is the highest peak in all of Karnataka and is the best place to get a perfect view of the sun rising from behind the mountains.
+                               
+
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail"><br>
+                        <a href="https://www.youtube.com/watch?v=6GdTPicOSjg" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../places/images/HAMPI.png" style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Hampi</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">City of Ruins</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description5">
+Hampi, the city of ruins, is a UNESCO World Heritage Site. Situated in the shadowed depth of hills and valleys in the state of Karnataka, this place is a historical delight for travellers. Surrounded by 500 ancient monuments, beautiful temples, bustling street markets, bastions, treasury building an....<br>
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+Hampi, the city of ruins, is a UNESCO World Heritage Site. Situated in the shadowed depth of hills and valleys in the state of Karnataka, this place is a historical delight for travellers. Surrounded by 500 ancient monuments, beautiful temples, bustling street markets, bastions, treasury building and captivating remains of Vijayanagar Empire, Hampi is a backpacker's delight. Hampi is an open museum with 100+ locations to explore and a favourite way to see the city from the perspective of its history.
+ Hampi was the capital of the Vijayanagar empire around 1500 AD, and by some accounts, the second largest city in the world at that time. Over the next centuries it fell out of importance, and now you can explore the ruins of a lot of temples and other structures spread out over a vast area. The terrain around Hampi is as mysterious as the ruins itself - the city is surrounded by boulders of different sizes, and you can climb to the top of them with a little effort to get a stunning view of the entire city and the geography. It is located on the banks of the Tungabhadra River. Famous for its massive, beautifully carved temples, especially the Virupaksha Temple, dedicated to the patron deity of the empire. You can also find remains of the old aqueducts, canals and military barracks and stables here. Hampi was declared a UNESCO World Heritage site in 1986 and many efforts have been taken to restore the lost glory of the place - very limited (if any) modern establishments are allowed in the main area, which gives an authentic feel to the ruins.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=detFKoNnbK8" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../places/images/UDUPI.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Udupi</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Coastal Town</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description6">
+Udupi is a coastal town in Karnataka, most famous for its vegetarian cuisine and South Indian restaurants all over the country. With beautifully carved ancient temples, laidback beaches and unexplored forests, Udupi is also the place where the educational hub of Manipal is located. Situated 60 ...
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+Udupi is a coastal town in Karnataka, most famous for its vegetarian cuisine and South Indian restaurants all over the country. With beautifully carved ancient temples, laidback beaches and unexplored forests, Udupi is also the place where the educational hub of Manipal is located. Situated 60 km from Mangalore, Udupi is famous for its temple culture.
+Surrounded by the Arabian Sea on one side and the Western ghats on the other, this pilgrim centre is the most important city in Karnataka after Bangalore and Mangalore. Being a holy town, one of the most important attractions here is the Krishna Temple. Udupi is also known as Rajata Peetha and Shivalli locally.
+Some of the most beautiful beaches in Karnataka are in Udupi. Malpe Beach is a tourist hotspot as it has beach shacks selling some of the most delicious seafood fresh off the boat, a beachside culture unlike any other in Southern Karnataka and many water sports too. From here, you can take a boat to St. Mary's Island which is famous for its black rocks. 
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+
+                        <a href="https://www.youtube.com/watch?v=8HScAI9jwZ8" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../places/images/MURUDESHWAR.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Murudeshwar</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">View Points</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description7">
+Murudeshwar is home to the second tallest statue of Lord Shiva (123 ft) in the world. With the shimmering Arabian Sea on three sides and the magnificent Western Ghats imposing their presence on this town, it is a favourite picnic spot for the folks from Kerala and Karnataka. The beaches and the adve... </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+Murudeshwar is home to the second tallest statue of Lord Shiva (123 ft) in the world. With the shimmering Arabian Sea on three sides and the magnificent Western Ghats imposing their presence on this town, it is a favourite picnic spot for the folks from Kerala and Karnataka. The beaches and the adventure activities around Netrani island are significant attractions for the tourists.
+Murudeshwar temple and fort are also the most visited spots, captivating one with their rustic charm and beauty. Nearby Netrani island is also a trendy spot for tourists as it offers excellent snorkelling and scuba diving opportunities. The Murudeshwar beach, however, has become a little overcrowded and dirty due to human intervention and could be avoided.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=jixqnE1Guik" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src=" ../places/images/GOKARNA.jpg " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Gokarna</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;"> Pristine Beaches</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description8">
+With its pristine beaches and breathtaking landscapes, Gokarna is a Hindu pilgrimage town in Karnataka and a newly found hub for beach lovers and hippies. Situated on the coast of Karwar, every year Gokarna welcomes hordes of tourists from around the world in search of sanctity and relaxat...
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+With its pristine beaches and breathtaking landscapes, Gokarna is a Hindu pilgrimage town in Karnataka and a newly found hub for beach lovers and hippies. Situated on the coast of Karwar, every year Gokarna welcomes hordes of tourists from around the world in search of sanctity and relaxation. The out-of-town beaches like Kudle beach and Om Beach are a different contrast to life inside the town. 
+Palm clad beaches are dotted with foreign tourists in a majority and very few Indians are seen across. Gokarna is not very conventionally touristy. The beaches are meant for a slow, relaxed holiday and everything on the beach goes at the same relaxed pace. Full of coconut and palm trees, the ocean and clean sands, Gokarna is a 'one of a kind' place in the country.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=Ym1EHNBnTtk" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src= ../places/images/BADAMI.jpg  " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Badami</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Valley</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description9">
+Located in a valley of rugged red sandstone, surrounding the Agastya Lake, Badami (formerly known as Vatapi) is an archaeological delight owing to its beautifully crafted sandstone cave temples, fortresses and carvings. Located in the Bagalkot district in Karnataka, Badami is part of the UNESCO Worl...
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+Located in a valley of rugged red sandstone, surrounding the Agastya Lake, Badami (formerly known as Vatapi) is an archaeological delight owing to its beautifully crafted sandstone cave temples, fortresses and carvings. Located in the Bagalkot district in Karnataka, Badami is part of the UNESCO World Heritage Sites that constitute Aihole-Badami-Pattadakal and is the finest example of traditional temple architecture in India. 
+Once the royal capital of the Chalukyas, Badami is home to a number of examples of Dravidian architecture which have instances of both South and North Indian styles of architecture. There are three Hindu Temples and one Jain Temple in Badami Caves. Rock climbing is a popular activity here for people looking for some adventure too. 
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=6ZtdtezrEaA" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src="../places/images/BANDIPUR-NATIONAL-PARK.jpg  " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Bandipur</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">National Park</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description10">
+Situated in  Karnataka, Bandipur National Park was once the hunting grounds of the Maharaja of Mysore. It was later established as a reserve in 1974 under Project Tiger and these deciduous forests rich in wildlife have become a popular tourist attraction since then. It is 80 km from Mysore enro...
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+Situated in  Karnataka, Bandipur National Park was once the hunting grounds of the Maharaja of Mysore. It was later established as a reserve in 1974 under Project Tiger and these deciduous forests rich in wildlife have become a popular tourist attraction since then. It is 80 km from Mysore enroute Ooty in Tamil Nadu. Due to a lot of wildlife casualties because of speeding vehicles that go through the park, a ban on traffic between 9 PM to 6 AM has been established to ensure the safety of the animals of the park.
+It is located in the Nilgiris and is the first Biosphere Reserve in India. Spread over 874 sq km, the park is replete with a wide range of endangered wildlife like elephants, hornbills, deers, pythons, sloth bears, pythons, panthers etc. and multitudes of teak and sandalwood trees. Bandipur National Park is neighbours with the Nagarhole and the Wayanad Wildlife sanctuaries and is a few minutes from the Mudumalai National Park. 
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=Db7QfEoEq9Q" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src="../places/images/KABINI.png  " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Kabini</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Rivers and National Park</span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description11">
+Located around 245 km from Bangalore, Kabini is primarily known for its handful of luxury resorts around the Kabini River and Nagarhole National Park in the vicinity.  Please note that there are not many budget-friendly accommodations near Kabini River. It is a popular weekend getaway...
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+Located around 245 km from Bangalore, Kabini is primarily known for its handful of luxury resorts around the Kabini River and Nagarhole National Park in the vicinity.  Please note that there are not many budget-friendly accommodations near Kabini River. It is a popular weekend getaway from Bangalore, Mysore and Mangalore.
+Once a private hunting area for the British, Kabini is a wildlife destination that is the largest place for Asiatic Elephants in the world. The Kabini Forest Reserve (which comprises the south-eastern part of Nagarhole National Park) is famous for its amazing wildlife and birdlife. Kabini is also home to the world's most famous living black panther "Saya". Even though it is not impossible to spot him, it is very rare.
+Boat Safari and Jeep Safari in the Kabini jungle is the ideal way to spot the tiger, leopard, guars, elephants and other majestic species. Kabini is also one of the best places in India to photograph leopards.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="my-panel">
+                    <div class="thumbnail">
+                        <a href="https://www.youtube.com/watch?v=K8qIalMGrCw" data-toggle="lightbox" data-gallery="youtubevideos">
+                            <img src="../places/images/DANDELI.jpg  " style="width:100% ">
+                        </a>
+                        <div class="caption">
+                            <h4>Dandeli</h4>
+                            <p><span style="color: rgb(231, 125, 143);font-weight: bold;">Ghats of Karnataka </span>&emsp;&emsp;<span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p id="description12">
+Located on the Western Ghats of Uttara Karnataka, Dandeli is bestowed with the lush green forests and lies on the banks of the Kali river. Known for its many fantastic adventure opportunities, Dandeli is a hub for river rafting on river kali . Adventure seekers have many options ...
+                    </p>
+                    <div class="im">
+                        <button type="button" class="btn btn-info">More Info</button>
+                        <div class="overlay">
+                            <p class="text">
+Located on the Western Ghats of Uttara Karnataka, Dandeli is bestowed with the lush green forests and lies on the banks of the Kali river. Known for its many fantastic adventure opportunities, Dandeli is a hub for river rafting on river kali . Adventure seekers have many options such as mountain biking, trekking, cycling, kayaking and canoeing. The Dandeli Wildlife Sanctuary is another exciting element that Dandeli has to offer.  This is perfect for nature lovers too as they can spot Bisons and Black Panthers here as well as be amidst beautiful flora as well.
+Dandeli has famous attractions here like the Kavla Caves, Ulavi Temple, Satholi Falls and the famous Sykes Point which gives tourists a breathtaking view of Dandeli. Camping is a popular activity here and there are plenty of operators here that provide fantastic services and memorable experiences to the guests.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"><a href="../contact.html" class="book">Book Now!</a></button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div style="margin-bottom: 2rem;"></div>
+    <div id="foot"></div>
+    <script>
+        $(document).ready(function() {
+
+            $('#foot').load("../footer1.html");
+
+        });
+    </script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+        var myDiv1 = $('#description1');
+        myDiv1.text(myDiv1.text().substring(0, 500) + "......");
+        var myDiv2 = $('#description2');
+        myDiv2.text(myDiv2.text().substring(0, 500) + "......");
+        var myDiv3 = $('#description3');
+        myDiv3.text(myDiv3.text().substring(0, 500) + "......");
+        var myDiv4 = $('#description4');
+        myDiv4.text(myDiv4.text().substring(0, 500) + "......");
+        var myDiv5 = $('#description5');
+        myDiv5.text(myDiv5.text().substring(0, 500) + "......");
+        var myDiv6 = $('#description6');
+        myDiv6.text(myDiv6.text().substring(0, 500) + "......");
+        var myDiv7 = $('#description7');
+        myDiv7.text(myDiv7.text().substring(0, 500) + "......");
+        var myDiv8 = $('#description8');
+        myDiv8.text(myDiv8.text().substring(0, 530) + "......");
+        var myDiv9 = $('#description9');
+        myDiv9.text(myDiv9.text().substring(0, 500) + "......");
+        var myDiv10 = $('#description10');
+        myDiv10.text(myDiv10.text().substring(0, 500) + "......");
+        var myDiv11 = $('#description11');
+        myDiv11.text(myDiv11.text().substring(0, 500) + "......");
+        var myDiv12 = $('#description12');
+        myDiv12.text(myDiv12.text().substring(0, 500) + "......");
+
+        function logout() {
+            alert("you are about to logout. Click OK to continue. ");
+        }
+    </script>
+</body>
+
+</html>
